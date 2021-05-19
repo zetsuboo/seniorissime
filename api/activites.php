@@ -8,5 +8,10 @@ if(isset($postData)){
       'loc' => $data->data->ville
     ));
     $result = $conn->fetchAll();
-    echo json_encode($result);
+    if(!$result){
+      echo json_encode('non');
+    } else {
+      
+      echo json_encode($result);
+    }
 }

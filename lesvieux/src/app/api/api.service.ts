@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class ApiService {
 
   constructor(private http: HttpClient) { }
-  baseUrl = 'http://localhost/seniorissime/api/';
+  baseUrl = 'http://localhost/seniorissimewf3/api/';
 
    meteo(){
     return this.http.get('http://api.openweathermap.org/data/2.5/weather?q=lyon&appid=4bc926ca38cf408b902392a4a9164238').pipe(

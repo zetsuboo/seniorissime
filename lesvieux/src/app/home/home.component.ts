@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ApiService } from '../api/api.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { ApiService } from '../api/api.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService, private router: Router) { }
   response:any;
   ngOnInit(): void {
   }
@@ -20,7 +21,7 @@ export class HomeComponent implements OnInit {
     this.api.getActivites(obj).subscribe(
       (res) => {
         console.log(res);
-        this.response = res;
+        this
         return res
       }
     )
