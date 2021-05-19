@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9d0ff41-09a8-4c80-ba1c-5f93547f7d80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesvieux/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesvieux/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesvieux/src/app/api/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lesvieux/src/app/api/api.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesvieux/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesvieux/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesvieux/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/lesvieux/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621418600258</updated>
       <workItem from="1621418601463" duration="1614000" />
-      <workItem from="1621420311351" duration="2842000" />
+      <workItem from="1621420311351" duration="4028000" />
     </task>
     <servers />
   </component>
