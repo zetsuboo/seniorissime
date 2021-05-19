@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <input type="ville"  name="ville" ngModel required >
+  <button type="submit" [disabled]="!form.form.valid">
+    chercher
+  </button>
+</form>
+
+
+<div *ngIf='response'>
+  {{response| json}}
+  </div>
+<div *ngIf='response === []'>
+et bah nan
+</div>
