@@ -1,34 +1,31 @@
 <!--HEADER-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
   <div class="container">
-    <a class="navbar-brand" href="#">Seniorissimes</a>
+    <a class="navbar-brand" href="/"><img id="logo-header" src="assets/img/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Accueil <span class="sr-only"></span></a>
-        <a class="nav-item nav-link" href="#">Activités</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link active" href="/">Accueil <span class="sr-only"></span></a>
+        <a class="nav-item nav-link" href="/activités">Activités</a>
+        <a class="nav-item nav-link" href="/contact">Contact</a>
       </div>
     </div>
   </div>
 </nav>
 <!--END HEADER-->
 
-
 <router-outlet></router-outlet>
-
-
 
 <!--FOOTER-->
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-1">
-        <img id="logo-footer" src="assets/img/kingdom-394.svg">
+        <img id="logo-footer" src="assets/img/Fav-icon.png">
       </div>
-      <div class="col-5">
+      <div class="col-3">
         <li>
           <ul id="footer-title">
             Les Seniorissimes
@@ -45,14 +42,14 @@
           <ul>
             Mail : contact@seniorissimes.com
           </ul>
-          <ul>
-            <img src="assets/img/facebook-square-brands.svg">
-            <img src="assets/img/instagram-brands.svg">
-            <img src="assets/img/linkedin-brands.svg">
-          </ul>
         </li>
       </div>
-      <div class="col-6 text-end" id="right-footer">
+      <div class="col-4 text-center my-auto">
+          <img class="social-network-logo" src="assets/img/awesome-facebook-square.png">
+          <img class="social-network-logo" src="assets/img/awesome-instagram.png">
+          <img class="social-network-logo" src="assets/img/awesome-linkedin.png">
+      </div>
+      <div class="col-4 text-end" id="right-footer">
         <li>
           <ul>
             Contact
@@ -65,9 +62,6 @@
           </ul>
           <ul>
             Politique de confidentialité
-          </ul>
-          <ul>
-            Site Angular
           </ul>
         </li>
       </div>
