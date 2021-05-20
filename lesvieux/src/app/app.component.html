@@ -1,12 +1,12 @@
 <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active" href="#">Accueil</a>
+    <a class="nav-link active" [routerLink]="['/']">Accueil</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">toutes les activiés </a>
+    <a class="nav-link" [routerLink]="['/activités']">toutes les activiés </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">contact</a>
+    <a class="nav-link" [routerLink]="['/contact']">contact</a>
   </li>
 </ul>
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>

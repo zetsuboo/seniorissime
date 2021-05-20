@@ -1,12 +1,24 @@
 <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <h1 class="text-danger" *ngIf="err">
+    C'EST FAUUUX
+  </h1>
   <input type="text"  name="ville" ngModel required >
-  <div class="input-group mb-3">
+  <span *ngIf="!toggletype">
+
+    <label for="plus">affiner la recherche</label>
+    <input  (click)="toggletype = true" type="checkbox" id='plus'>
+  </span>
+  <span *ngIf="toggletype">
+
+    <label for="plus">ne pas affiner la recherche</label>
+    <input (click)="toggletype = false" type="checkbox" id='plus'>
+  </span>
+  <div *ngIf='toggletype' class="input-group mb-3">
     <div class="input-group-prepend">
-      <button class="btn btn-outline-secondary" type="button">affiner la recherche</button>
+      <button class="btn btn-outline-secondary" type="button">categorie</button>
     </div>
-    <select  class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-      <option selected>Choose...</option>
-      <option value="1">One</option>
+    <select  class="custom-select" ngModel required name="type" id="inputGroupSelect03" aria-label="Example select with button addon">
+      <option value="autre">autre</option>
       <option value="2">Two</option>
       <option value="3">Three</option>
     </select>
