@@ -11,14 +11,4 @@ import { meteoData } from './meteo';
 export class AppComponent {
   title = 'lesvieux';
   constructor(private api: ApiService){}
-  res:any;
-  getMeteo(){
-    return this.api.meteo().subscribe(
-      (res) => {
-        this.res = res;
-        console.log(this.res)
-
-      }
-    )
-  }
 }
