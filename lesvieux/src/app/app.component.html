@@ -1,12 +1,70 @@
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" [routerLink]="['/']">Accueil</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" [routerLink]="['/activités']">toutes les activiés </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" [routerLink]="['/contact']">contact</a>
-  </li>
-</ul>
-  <router-outlet></router-outlet>
+<!--HEADER-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+  <div class="container">
+    <a class="navbar-brand" href="/"><img id="logo-header" src="assets/img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">Accueil <span class="sr-only"></span></a>
+        <a class="nav-item nav-link" href="/activités">Activités</a>
+        <a class="nav-item nav-link" href="/contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--END HEADER-->
+
+<router-outlet></router-outlet>
+
+<!--FOOTER-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-1">
+        <img id="logo-footer" src="assets/img/Fav-icon.png">
+      </div>
+      <div class="col-3">
+        <li>
+          <ul id="footer-title">
+            Les Seniorissimes
+          </ul>
+          <ul>
+            340 Rue Dupon-Dupon
+          </ul>
+          <ul>
+            69005 LYON
+          </ul>
+          <ul>
+            Tel : 04 00 00 00 00
+          </ul>
+          <ul>
+            Mail : contact@seniorissimes.com
+          </ul>
+        </li>
+      </div>
+      <div class="col-4 text-center my-auto">
+          <img class="social-network-logo" src="assets/img/awesome-facebook-square.png">
+          <img class="social-network-logo" src="assets/img/awesome-instagram.png">
+          <img class="social-network-logo" src="assets/img/awesome-linkedin.png">
+      </div>
+      <div class="col-4 text-end" id="right-footer">
+        <li>
+          <ul>
+            Contact
+          </ul>
+          <ul>
+            Mentions Légales
+          </ul>
+          <ul>
+            Conditions générales d'utilisation
+          </ul>
+          <ul>
+            Politique de confidentialité
+          </ul>
+        </li>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,33 @@
+h1 {
+  font-weight: bold;
+}
+.test {
+  border: 1px solid black;
+}
+.sectionTest {
+  background-color: #ffe1e1;
+  padding: 40px;
+  margin: 40px 0;
+  box-shadow: 0px 0px 20px grey;
+}
+.sectionTest h1 {
+  color: #f28581;
+  font-weight: bold;
+}
+.sectionTest p {
+  width: 30vw;
+  text-align: center;
+  margin: 20px auto;
+}
+.btn {
+  height: 30px;
+}
+.btn-outline-primary {
+  color: #f28581;
+  border-color: #f28581;
+}
+.btn-outline-primary:hover {
+  color: white;
+  border-color: #f28581;
+  background-color: #f28581;
+}
